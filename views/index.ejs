@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Anime Quote Generator</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="styles/favicon.ico">
+
+    <!-- CSS imports: Google fonts and custom css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <% if (error) { %>
+            <h1>
+                <%= errorCode %>
+            </h1>
+            <p>
+                <%= errorMsg %>
+            </p>
+            <% } else { %>
+                <img src="<%= image %>" alt="<%= anime %> image">
+                <h1 id="quote">
+                    "<%= quote %>"
+                </h1>
+                <h2 id="character">
+                    — <%= character %>
+                </h2>
+                <h3 id="anime">
+                    <a href="<%= animeURL %>">
+                        <%= anime %>
+                    </a>
+                </h3>
+                <button id="newQuote" onclick="window.location.href='/'">new quote</button>
+                <% } %>
+    </div>
+</body>
+
+</html>
