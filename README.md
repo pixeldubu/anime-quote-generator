@@ -1,8 +1,8 @@
 # 💬 Anime Quote Generator
 A simple web app that fetches and displays random quotes from anime series using public APIs.
 
-## 🌐 Live Demo
-https://anime-quote-generator-p7ts.onrender.com/
+## 📸 Preview
+https://github.com/user-attachments/assets/0ef26c98-476b-4c4d-8910-8a796d41b616
 
 ## Tech Stack
 - `Node.js` - runtime
